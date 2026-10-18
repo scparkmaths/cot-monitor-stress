@@ -1,0 +1,24 @@
+# Secrets and local environments
+.env
+.env.*
+!.env.example
+.venv/
+# Private research inputs and generated artifacts
+/data/
+/logs/
+/cache/
+/outputs/*
+!/outputs/tables/
+*.eval
+*.zip
+# Python, tools, and OS/editor files
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.DS_Store
+*.swp
+*.swo
+*~
+*.bak
+*.before-*

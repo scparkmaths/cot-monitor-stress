@@ -1,0 +1,24 @@
+openrouter:
+  agent_strong:
+    slug: deepseek/deepseek-v4-pro
+    provider: deepinfra/fp8
+  agent_baseline:
+    slug: openai/gpt-oss-120b
+    provider: deepinfra/bf16
+  trusted:
+    slug: openai/gpt-oss-20b
+    provider: deepinfra/bf16
+  obfuscator:
+    slug: z-ai/glm-5.3-flashx
+    provider: z-ai/fp8
+  monitor_mid:
+    slug: qwen/qwen3.5-27b
+    provider: novita/bf16
+  validator:
+    slug: mistralai/mistral-small-3.2-24b-instruct
+    provider: parasail
+local:
+  embedder: sentence-transformers/all-MiniLM-L6-v2
+  ref_lm:
+    id: Qwen/Qwen3-1.7B-Base
+    revision: ea980cb0a6c2ae4b936e82123acc929f1cec04c1
